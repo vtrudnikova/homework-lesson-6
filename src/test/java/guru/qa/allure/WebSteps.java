@@ -30,6 +30,6 @@ public class WebSteps {
     }
     @Step("Проверить, что открылся раздел Issues")
     public void checkOpenedIssueSection(){
-        $(byText("Issues")).should(Condition.exist);
+        $(byText("Issues")).should(Condition.visible);
     }
 }

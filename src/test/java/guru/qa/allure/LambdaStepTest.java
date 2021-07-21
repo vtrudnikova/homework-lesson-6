@@ -30,7 +30,7 @@ public class LambdaStepTest {
             $(partialLinkText("Issues")).click();
         });
         step("Проверить, что открылся раздел Issues", () -> {
-            $(byText("Issues")).should(Condition.exist);
+            $(byText("Issues")).should(Condition.visible);
         });
     }
 }
